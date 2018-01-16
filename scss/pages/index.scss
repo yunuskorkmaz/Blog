@@ -1,0 +1,117 @@
+.portfolio {
+    background-color: $color-dark2;
+    padding-bottom: 50px;
+    .items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .item {
+            width: 33%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            
+            .item-info {
+                background-color: $color-dark1;
+                div {
+                    padding: 10px 0;
+                    display: flex;
+                    color: $color-white;
+                    font-size: 14px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    span:not(:last-child) {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+        @include mq('s') {
+            
+            .item {
+                width: 100%;
+            }
+        }
+
+        @include mq('m') {
+          
+          
+            .item {
+                width: 49%;
+            }
+        }
+    }
+}
+
+.row-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 35px 0;
+    font-size: 30px;
+    color: $color-white;
+}
+
+.blog {
+    background-color: $color-dark1;
+    color: $color-white;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .blog-more {
+        a {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: $color-hover;
+            border-radius: 5px;
+            float: right;
+        }
+    }
+    .blogs {
+        padding-bottom: 10px;
+        .item {
+            margin-bottom: 10px;
+            text-align: center; // background-color: $color-dark1;
+            padding: 0 10px 20px 10px; // border: 1px solid $color-border;
+            // border-right: 1px solid $color-border;
+            border-bottom: 1px dotted rgba(255, 255, 255, .2);
+            .title {
+                font-size: 25px;
+                padding-top: 5px;
+                font-weight: bold;
+                display: inline-flex;
+                margin-bottom: 10px;
+                color: $color-hover;
+                cursor: pointer;
+                &:hover {
+                    border-bottom: 1px dotted;
+                    margin-bottom: 9px;
+                }
+            }
+            .descreption {
+                font-size: 20px;
+                padding: 0 0 5px 0;
+                color: rgba(255, 255, 255, .9);
+            }
+            .date-info {
+                padding: 5px 0;
+                color: rgba(255, 255, 255, .6);
+            }
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    background-color: $color-dark1;
+    color: $color-white;
+}

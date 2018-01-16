@@ -1,0 +1,25 @@
+@mixin mq($w : 'l'){
+
+	@if($w == 's'){
+
+		@media #{$small-and-down} {
+			@content;
+		  }
+
+	}
+	@else if ($w == 'm'){
+
+		@media #{$medium-only} {
+			@content;
+		  }
+
+	}
+	@else if($w == 'l'){
+
+		@media #{$large-and-up} {
+			@content;
+		  }
+	}
+}
+
+
