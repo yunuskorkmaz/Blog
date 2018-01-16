@@ -634,6 +634,10 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 55px;
   background-color: #25252b;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 20px; }
