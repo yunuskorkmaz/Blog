@@ -433,7 +433,7 @@ td {
   padding: 0; }
 
 html {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Roboto Mono", monospace; }
   html body {
     position: relative; }
 
@@ -521,7 +521,8 @@ nav {
   .header img {
     border-radius: 50%; }
   .header .myinfo {
-    padding: 10px 0; }
+    padding: 10px 0;
+    text-shadow: 2px 2px #000; }
     .header .myinfo * {
       padding: 5px 0px; }
   .header .social-link {
@@ -596,27 +597,37 @@ nav {
     padding-bottom: 10px; }
     .blog .blogs .item {
       margin-bottom: 10px;
-      text-align: center;
-      padding: 0 10px 20px 10px;
+      padding: 0 10px 20px 0;
       border-bottom: 1px dotted rgba(255, 255, 255, 0.2); }
       .blog .blogs .item .title {
-        font-size: 25px;
+        font-size: 22px;
         padding-top: 5px;
         font-weight: bold;
-        display: inline-flex;
+        line-height: 35px;
         margin-bottom: 10px;
         color: #039be5;
         cursor: pointer; }
-        .blog .blogs .item .title:hover {
+        .blog .blogs .item .title span {
           border-bottom: 1px dotted;
-          margin-bottom: 9px; }
+          padding: 1px 2px; }
+        .blog .blogs .item .title span:hover {
+          background-color: #039be5;
+          color: #ffffff; }
+        .blog .blogs .item .title:before {
+          display: inline;
+          content: '>_';
+          font-size: 20px; }
       .blog .blogs .item .descreption {
-        font-size: 20px;
-        padding: 0 0 5px 0;
+        font-size: 18px;
+        padding: 10px 0 5px 0;
         color: rgba(255, 255, 255, 0.9); }
       .blog .blogs .item .date-info {
         padding: 5px 0;
         color: rgba(255, 255, 255, 0.6); }
+        .blog .blogs .item .date-info svg {
+          width: 15px;
+          height: 15px;
+          padding-top: 2px; }
 
 .footer {
   display: flex;
