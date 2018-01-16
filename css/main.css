@@ -522,8 +522,9 @@ nav {
     border-radius: 50%; }
   .header .myinfo {
     padding: 10px 0;
-    text-shadow: 2px 2px #000; }
+    text-shadow: 1px 1px #000; }
     .header .myinfo * {
+      line-height: 1.4em;
       padding: 5px 0px; }
   .header .social-link {
     padding: 10px;
@@ -609,13 +610,15 @@ nav {
         cursor: pointer; }
         .blog .blogs .item .title span {
           border-bottom: 1px dotted;
-          padding: 1px 2px; }
+          padding: 1px 2px;
+          margin-left: -5px; }
         .blog .blogs .item .title span:hover {
           background-color: #039be5;
           color: #ffffff; }
         .blog .blogs .item .title:before {
           display: inline;
-          content: '>_';
+          vertical-align: middle;
+          content: '#';
           font-size: 20px; }
       .blog .blogs .item .descreption {
         font-size: 18px;
