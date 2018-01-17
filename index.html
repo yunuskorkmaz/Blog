@@ -194,6 +194,25 @@
         <!-- #blog -->
 
 
+        <div class="terminal">
+                <div class="container">
+            <div class="content">
+                
+                <div class="window">
+                    <div class="window-head">
+                            yunus.js / bash
+                    </div>
+                    <div id="app" class="window-body">
+
+                
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
         <!-- portfolio -->
 
         <div class="portfolio">
@@ -267,6 +286,31 @@
         </div>
 
         <!-- #footer -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+        <script>
+
+var app = document.getElementById('app');
+          var typewriter = new Typewriter(app, {
+            loop: true,
+            cursor : "_",
+            deleteSpeed : 10
+        });
+        
+        typewriter.typeString('Merhaba!')
+            .pauseFor(750)
+            .deleteAll()
+            .typeString('Sorularınız yada önerileriniz için')
+            .pauseFor(750)
+            .deleteAll()
+            .typeString('yunuskorkmaz95@gmail.com')
+            .pauseFor(1500)
+            .deleteAll()
+            .typeString("Adresine mail atabilirsiniz.")
+            .pauseFor(1500)
+            .start();
+        </script>
     </body>
 
 </html>
