@@ -433,7 +433,7 @@ td {
   padding: 0; }
 
 html {
-  font-family: "Oxygen", sans-serif; }
+  font-family: "Roboto Mono", monospace; }
   html body {
     position: relative; }
 
@@ -500,7 +500,8 @@ nav {
         height: 55px;
         padding: 0px 10px; }
         nav ul li a:hover {
-          color: #039be5; }
+          color: #039be5;
+          border-bottom: 3px dotted; }
 
 .header {
   background-color: #25252b;
@@ -510,20 +511,16 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-top: 105px;
+  padding-bottom: 50px;
   text-align: center;
-  padding-top: 155px;
-  background-image: url("/images/bg4.jpg");
+  background-image: url("http://www.simdols.com/media/files/2016/08/it-background-5.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover; }
   .header img {
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    border: 1px solid white; }
+    border-radius: 50%; }
   .header .myinfo {
-    font-family: "Roboto Mono", monospace;
     padding: 10px 0;
     text-shadow: 1px 1px #000; }
     .header .myinfo * {
@@ -535,12 +532,11 @@ nav {
     justify-content: center;
     height: 65px; }
     .header .social-link a {
-      color: white;
       padding: 10px; }
       .header .social-link a:not(:first-child) {
         margin-left: 5px; }
       .header .social-link a:hover {
-        color: #039be5; }
+        border-bottom: 2px dotted #039be5; }
       .header .social-link a i {
         font-size: 20px; }
 
@@ -585,8 +581,7 @@ nav {
   color: #ffffff; }
 
 .blog {
-  border-top: 2px solid white;
-  background-color: #161514;
+  background-color: #25252b;
   color: #ffffff;
   padding-bottom: 50px;
   display: flex;
@@ -602,7 +597,6 @@ nav {
   .blog .blogs {
     padding-bottom: 10px; }
     .blog .blogs .item {
-      margin-top: 10px;
       margin-bottom: 10px;
       padding: 0 10px 20px 0;
       border-bottom: 1px dotted rgba(255, 255, 255, 0.2); }
@@ -612,15 +606,19 @@ nav {
         font-weight: bold;
         line-height: 35px;
         margin-bottom: 10px;
+        color: #039be5;
         cursor: pointer; }
         .blog .blogs .item .title span {
+          border-bottom: 1px dotted;
           padding: 1px 2px;
           margin-left: -5px; }
         .blog .blogs .item .title span:hover {
-          color: grey; }
+          background-color: #039be5;
+          color: #ffffff; }
         .blog .blogs .item .title:before {
           display: inline;
           vertical-align: middle;
+          content: '#';
           font-size: 20px; }
       .blog .blogs .item .descreption {
         font-size: 18px;
