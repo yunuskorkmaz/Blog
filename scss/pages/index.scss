@@ -56,6 +56,7 @@
 }
 
 .blog {
+    
     background-color: $color-dark1;
     color: $color-white;
     padding-bottom: 50px;
@@ -63,6 +64,12 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    
+    .container{
+        min-width: 50%;
+    }
+
     .blog-more {
         a {
             margin: 10px 0;
@@ -73,6 +80,7 @@
         }
     }
     .blogs {
+        
         padding-bottom: 10px;
         .item {
             margin-bottom: 10px;
