@@ -75,7 +75,7 @@ nav {
                 padding: 0px 10px;
                 &:hover {
                     color: $color-hover;
-                    
+                    border-bottom: 3px dotted;
                 }
             }
         }
